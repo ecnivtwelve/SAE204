@@ -1,0 +1,32 @@
+.projects {
+  height: 350vh;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+}
+
+.projects-container {
+  height: calc(100vh - calc((var(--nav-height) / 2) - 20px));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-top: calc((var(--nav-height) / 2) - 20px);
+  margin-top: -30px;
+}
+
+.projects-content {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #00000044;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}

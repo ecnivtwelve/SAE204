@@ -1,0 +1,289 @@
+.hero {
+  height: calc(100vh - var(--nav-height) - 20px);
+  background: #0066ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 20px;
+  width: calc(100vw - 40px);
+  border-radius: 20px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    margin: 0 10px;
+    width: calc(100vw - 20px);
+  }
+}
+
+#gradient-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 700px;
+  margin: 20px;
+
+  margin-top: -20px;
+
+  gap: 28px;
+
+  color: #fff;
+}
+
+.hero-content * {
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 2.3rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+  max-width: 700px;
+}
+
+.hero-title span {
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #ffffffac;
+  max-width: 700px;
+}
+
+.hero .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.hero .button {
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid rgba(var(--color-text-rgb), 0.2);
+  box-shadow: 0px 1px 3px #00000020;
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: 10px;
+  transition: all 0.3s, color 0.1s, background-color 0.2s, border-color 0.1s;
+  transition-timing-function: cubic-bezier(0.44, -0.2, 0, 1.57);
+}
+
+.hero .button-icon {
+  height: 22px;
+}
+
+.hero .button-text {
+  color: inherit;
+  font-size: 1rem;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  transition: all 0.3s, color 0.1s;
+  transition-timing-function: cubic-bezier(0.44, -0.2, 0, 1.57);
+}
+
+.hero .button.filled {
+  background-color: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-invert);
+}
+
+.hero .button:hover {
+  background-color: #2eaff4;
+  border-color: #ffffff44;
+  box-shadow: 0px 0px 10px #00000033;
+  color: #fff;
+  padding: 0 28px;
+  height: 44px;
+  margin: -2px 6px;
+  border-radius: 32px;
+}
+
+.hero .button:active {
+  height: 38px;
+  margin: 1px 12px;
+  padding: 0 18px;
+  filter: brightness(1.2);
+  transition: all 0.1s;
+}
+
+.hero .button:hover .button-text {
+  font-weight: 700;
+}
+
+.hero .invite {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hero .invite-icon {
+  height: 22px;
+
+  opacity: 0.5 !important;
+}
+
+.hero .invite-text {
+  font-size: 0.9;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  opacity: 0.5 !important;
+}
+
+.hero .availability {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: 300px;
+  transition: all 0.3s, color 0.1s, background-color 0.2s, border-color 0.1s;
+  transition-timing-function: cubic-bezier(0.44, -0.2, 0, 1.57);
+}
+
+.hero .availability:hover {
+  background-color: #ffffff22;
+  padding: 2px 26px;
+  margin: -2px 0;
+}
+
+.availability-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
+.availability-symbol {
+  margin-left: 2px;
+
+  width: 10px;
+  aspect-ratio: 1 / 1;
+  border-radius: 300px;
+  background-color: #ffffff;
+
+  outline: 5px solid #ffffff22;
+
+  animation: available 2s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes available {
+  0% {
+    outline-width: 0px;
+  }
+  20% {
+    outline-color: #ffffff42;
+  }
+  100% {
+    outline-width: 10px;
+    outline-color: #ffffff00;
+  }
+}
+
+.hero .stickers {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.44, -0.2, 0, 1.57);
+}
+
+.hero .sticker {
+  position: absolute;
+  filter: drop-shadow(0px 2px 5px #00000044);
+  height: 100%;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.44, -0.2, 0, 1.57);
+}
+
+.hero .sticker-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .sticker:hover {
+  transform: scale(1.16) rotate(2deg);
+  filter: drop-shadow(0px 1px 3px #00000094);
+}
+
+.hero .sticker:active {
+  transform: scale(1.18) rotate(2deg) translateY(-6px);
+  filter: drop-shadow(0px 7px 10px #00000094) brightness(1.2);
+}
+
+.sticker-1 {
+  left: -420px;
+  top: -270px;
+  height: 130px;
+}
+
+.sticker-2 {
+  left: -400px;
+  bottom: -250px;
+  height: 110px;
+}
+
+.sticker-3 {
+  right: -460px;
+  top: -200px;
+  height: 130px;
+}
+
+.sticker-4 {
+  right: -470px;
+  bottom: -230px;
+  height: 120px;
+}
+
+@media screen and (max-width: 1100px) {
+  .stickers {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+  }
+}
