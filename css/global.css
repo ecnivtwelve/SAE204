@@ -22,6 +22,7 @@ body {
 :root {
   --width: 1200px;
   --margin-width: calc((100% - var(--width)) / 2);
+  --nav-height: 100px;
 
   --color-text: #000;
   --color-text-rgb: 0, 0, 0;
@@ -44,5 +45,7 @@ body {
 }
 
 .scroller {
-  min-height: 1100vh;
+  width: 100%;
+  height: 150vh;
+  min-height: 150vh;
 }
