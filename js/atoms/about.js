@@ -1,8 +1,4 @@
-const windowHeight = window.innerHeight;
-
 const aboutTexts = document.querySelectorAll(".about-text");
-
-console.log(aboutTexts);
 
 scroll((progress, info) => {
   const scrolled = info.y.current;
@@ -25,13 +21,13 @@ const origins = [
     scale: [0.8, 1],
   },
   {
-    x: ["700px", "0px"],
+    x: ["800px", "0px"],
     y: ["300px", "-10px"],
     rotate: ["10deg", "-1deg"],
-    scale: [1.1, 1],
+    scale: [1.05, 1],
   },
   {
-    x: ["700px", "110px"],
+    x: ["800px", "110px"],
     y: ["300px", "110px"],
     rotate: ["10deg", "5deg"],
     scale: [0.7, 1],

@@ -71,6 +71,11 @@
   color: var(--color-primary) !important;
 }
 
+.user:active {
+  padding: 5px 5px;
+  margin: -5px -5px;
+}
+
 .nav-left .avatar {
   width: 32px;
   aspect-ratio: 1/1;
