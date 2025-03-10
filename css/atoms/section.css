@@ -89,12 +89,10 @@
   box-shadow: 0 1px 10px #00000022;
 }
 
-/*
 .section-card:hover {
   border-color: #00000052;
   box-shadow: 0 1px 10px #00000044;
 }
-  */
 
 .section-card-date {
   background: #fff;
@@ -208,7 +206,8 @@
   margin: 0;
 }
 
-.section-chip-icon {
+.section-chip-icon,
+.section-chip-img {
   height: 22px;
 }
 
