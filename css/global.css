@@ -46,3 +46,10 @@ body {
 .scroller {
   min-height: 1100vh;
 }
+
+@media screen and (max-height: 800px) and (min-width: 800px) {
+  .about-content > *,
+  .projects-content > * {
+    zoom: 0.9 !important;
+  }
+}
