@@ -84,3 +84,11 @@ inView(".hero-content", (element) => {
     });
   };
 });
+
+function pauseGradient() {
+  if (!document.querySelector(".hero").classList.contains("paused")) {
+    document.querySelector(".hero").classList.add("paused");
+  } else {
+    document.querySelector(".hero").classList.remove("paused");
+  }
+}

@@ -89,7 +89,12 @@
     <main>
       <!-- HERO -->
       <div id="hero" class="hero">
-        <canvas id="gradient-container"></canvas>
+        <button class="gradient-pause" onclick="pauseGradient()">
+          <i data-lucide="pause" class="gradient-pause-icon"></i>
+          <i data-lucide="play" class="gradient-pause-icon play"></i>
+        </button>
+
+        <canvas id="gradient-container" aria-hidden="true"></canvas>
 
         <div class="hero-content">
           <div class="availability">
@@ -127,7 +132,7 @@
           </div>
         </div>
 
-        <div id="scene" class="stickers">
+        <div id="scene" class="stickers" aria-hidden="true">
           <div class="sticker-container sticker-1">
             <img src="./assets/img/sticker-1.webp" class="sticker" alt="" />
           </div>
@@ -193,7 +198,7 @@
                 <div class="about-postcard about-postcard-1">
                   <img
                     src="./assets/img/story_computer.webp"
-                    alt=""
+                    alt="Les projets Papillon, le logo de l'IUT et des formes géométriques sont utilisée pour me représenter."
                     class="about-postcard-image"
                   />
                   <p class="about-postcard-text">
@@ -204,7 +209,7 @@
                 <div class="about-postcard about-postcard-2">
                   <img
                     src="./assets/img/story_papillon.webp"
-                    alt=""
+                    alt="Le projet Papillon réunit des développeurs lors d'un tournage vidéo."
                     class="about-postcard-image"
                   />
                   <p class="about-postcard-text">
@@ -215,7 +220,7 @@
                 <div class="about-postcard about-postcard-2">
                   <img
                     src="./assets/img/story_code.webp"
-                    alt=""
+                    alt="J'apparais en train de développer un site web sur mon ordinateur."
                     class="about-postcard-image"
                   />
                   <p class="about-postcard-text">
