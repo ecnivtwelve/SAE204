@@ -1,9 +1,6 @@
 scroll(
   animate(document.querySelector(".projects-timeline"), {
-    transform: [
-      "translateX(calc(-50vw + 71.6%))",
-      "translateX(calc(-50vw - 12.5%))",
-    ],
+    transform: ["translateX(900px)", "translateX(-900px)"],
   }),
   {
     target: document.querySelector(".projects"),

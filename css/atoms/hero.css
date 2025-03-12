@@ -18,6 +18,11 @@
   .hero {
     margin: 0 10px;
     width: calc(100vw - 20px);
+    height: calc(100svh - var(--nav-height) - 70px);
+  }
+
+  .hero-content {
+    margin: 30px !important;
   }
 }
 

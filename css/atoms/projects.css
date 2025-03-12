@@ -5,6 +5,12 @@
   margin-top: 80px;
 }
 
+@media screen and (max-width: 670px) {
+  .projects {
+    margin-top: 20px;
+  }
+}
+
 .projects-container {
   height: calc(100vh - calc((var(--nav-height) / 2) - 20px));
   width: 100%;
@@ -35,6 +41,7 @@
 }
 
 .projects-title {
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -42,6 +49,7 @@
   align-items: center;
   gap: 4px;
   margin-top: 80px;
+  padding: 0 40px;
 }
 
 .projects-title-title {
@@ -82,34 +90,21 @@
 
 .projects-timeline {
   display: flex;
-  gap: 20vw;
 
   align-self: center;
-
-  transform: translateX(calc(-50vw + 50%));
-  margin-left: calc((100vw - 1200px) - 20%);
 }
 
 .project-example {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
-  width: 400px;
+  width: 600px;
   gap: 8px;
   text-align: center;
 
   color: inherit;
   text-decoration: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .project-example {
-    width: 300px;
-  }
-
-  .projects-timeline {
-    margin-left: calc((100vw - 1200px) + 80%);
-  }
 }
 
 .project-example-date {
@@ -118,12 +113,15 @@
   padding: 4px 12px;
   border: 1px solid #fff;
   border-radius: 300px;
+  max-width: 400px;
 }
 
 .project-example-title {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
+  width: 400px;
+  max-width: calc(100vw - 80px);
 }
 
 .project-example-text {
@@ -131,9 +129,12 @@
   line-height: 1.4rem;
   margin: 0;
   opacity: 0.8;
+  width: 400px;
+  max-width: calc(100vw - 80px);
 }
 
 .project-example-image {
-  width: 100%;
+  width: calc(100vw - 80px);
+  max-width: 400px;
   margin-top: 16px;
 }
