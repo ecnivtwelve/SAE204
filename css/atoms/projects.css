@@ -29,13 +29,13 @@
   margin: 20px;
   border-radius: 20px;
   border: 1px solid #00000044;
-  background-color: #000000;
+  background-color: #330076;
   background: linear-gradient(180deg, #330076 0%, #28192b 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
   color: #fff;
 }
@@ -63,7 +63,7 @@
   font-size: 1rem;
   line-height: 1.4rem;
   margin: 0;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .projects .invite {
@@ -84,8 +84,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-
-  opacity: 0.5 !important;
 }
 
 .projects-timeline {
