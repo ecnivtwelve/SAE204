@@ -30,10 +30,14 @@ interact(".sticker-container").draggable({
   ],
 });
 
-new Gradient({
-  canvas: "#gradient-container",
-  colors: ["#0066FF", "#00A8FF", "#0066FF", "#0033FF"],
-});
+try {
+  const gradient = new Gradient({
+    canvas: "#gradient-container",
+    colors: ["#0066FF", "#00A8FF", "#0066FF", "#0033FF"],
+  });
+} catch (error) {
+  console.error("Gradient initialization failed:", error);
+}
 
 /*
 animate(
